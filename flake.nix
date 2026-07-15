@@ -53,8 +53,8 @@
         			# ./home.nix
         			# this doubles my home-manager configs!
         			# home.nix is already defined in configuration.nix
-				nixvim.homeModules.nixvim
-				mangowm.hmModules.mango
+				      nixvim.homeModules.nixvim
+				      mangowm.hmModules.mango
         		];
         	};
         }
@@ -70,6 +70,7 @@
         {
           home-manager.users.riolu = {
             imports = [
+				      nixvim.homeModules.nixvim
               mangowm.hmModules.mango
             ];
           };
