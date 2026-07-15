@@ -20,7 +20,7 @@
 
       users.riolu = {
         files = [ 
-	        ".local/share/fish/fish_history"
+	        { file = ".local/share/fish/fish_history"; how = "symlink"; }
 	        { file = ".gitconfig"; how = "symlink"; }
 	      ];
         directories = [
@@ -28,8 +28,9 @@
 	        "Pictures"
 	        "nixos"
 	        "/tmp"
-	        ".config/mozilla/firefox/nixos"
-	        ".keepassxc"
+	        { directory = ".config/mozilla/firefox/nixos"; how = "symlink"; }
+	        { directory = ".config/gh"; how = "symlink"; }
+	        { directory = ".keepassxc"; how = "symlink"; }
         ];
       };
     };
