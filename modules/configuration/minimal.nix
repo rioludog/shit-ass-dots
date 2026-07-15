@@ -86,6 +86,7 @@
   environment.systemPackages = with pkgs; [
     ffmpeg-full # for codecs
     brightnessctl
+    github-cli
   ];
 
   # enable nix helper
