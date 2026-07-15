@@ -11,6 +11,8 @@
     };
     #spicetify-nix.url = "github:Gerg-L/spicetify-nix";
 
+    nixvim.url = "github:nix-community/nixvim";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,7 +34,7 @@
 
   };
 
-  outputs = { self, nixpkgs, mangowm, stylix, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, mangowm, stylix, home-manager, nixvim, ... }@inputs: {
   # outputs = { self, nixpkgs, ... }@inputs: {
     nixosConfigurations.t430 = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
@@ -51,6 +53,7 @@
         			# ./home.nix
         			# this doubles my home-manager configs!
         			# home.nix is already defined in configuration.nix
+				nixvim.homeModules.nixvim
 				mangowm.hmModules.mango
         		];
         	};

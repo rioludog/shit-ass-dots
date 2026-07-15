@@ -3,21 +3,42 @@
       enable = true;
 
       plugins = {
-          #alpha.enable = true;
-	  #cmp.enable = true;
           bufferline.enable = true;
-	  #flash.enable = true;
-	  lualine.enable = true;
-	  #mini-ai.enable = true;
-	  #mini-pairs.enable = true;
-	  #noice.enable = true;
-	  #nui.enable = true;
-	  #treesitter.enable = true;
-	  #treesitter-textobjects.enable = true;
-	  #snacks.enable = true;
-	  #trouble.enable = true;
-	  #ts-comments.enable = true;
-	  #which-key.enable = true;
+	        lualine.enable = true;
         };
+
+      opts = {
+      	number = true;
+	      relativenumber = true;
+	      cursorline = true;
+	      signcolumn = "yes";
+	      showmode = true;
+	      termguicolors = true;
+
+	      incsearch = true;
+	      ignorecase = true;
+	      smartcase = true;
+	      hlsearch = true;
+
+	      tabstop = 2;
+	      shiftwidth = 2;
+	      expandtab = true;
+      	autoindent = true;
+	      breakindent = true;
+      	copyindent = true;
+	      preserveindent = true;
+	      linebreak = true;
+	      wrap = true;
+
+	      pumheight = 10;
+	      infercase = true;
+
+      	cmdheight = 0;
+      	history = 100;
+
+      	virtualedit = "block";
+      	startofline = true;
+      	title = true;
       };
+    };
   }

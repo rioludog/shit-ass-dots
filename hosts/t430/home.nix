@@ -14,7 +14,7 @@
 
 	./../../modules/home/keepassxc.nix
 
-	#./../../modules/home/nixvim.nix
+	./../../modules/home/nixvim.nix
 
 
         # wm
@@ -84,7 +84,7 @@
 
     mpv.enable = true;
 
-    neovim.enable = true;
+    #neovim.enable = true;
 
     };
 
