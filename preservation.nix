@@ -7,7 +7,7 @@
 
       files = [
         { file = "/etc/machine-id"; inInitrd = true; how="symlink"; }
-	{ file = "/var/lib/swapfile"; }
+	      { file = "/var/lib/swapfile"; }
       ];
 
       directories = [
@@ -20,15 +20,16 @@
 
       users.riolu = {
         files = [ 
-	  ".local/share/fish/fish_history"
-	];
+	        ".local/share/fish/fish_history"
+	        { file = ".gitconfig"; how = "symlink"; }
+	      ];
         directories = [
           "Downloads"
-	  "Pictures"
-	  "nixos"
-	  "/tmp"
-	  ".config/mozilla/firefox/nixos"
-	  ".keepassxc"
+	        "Pictures"
+	        "nixos"
+	        "/tmp"
+	        ".config/mozilla/firefox/nixos"
+	        ".keepassxc"
         ];
       };
     };

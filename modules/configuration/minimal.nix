@@ -56,7 +56,7 @@
 
   # set flake path for nix helper
   programs.nh = {
-    flake = "~/nixos/";
+    flake = "nixos/";
   };
 
   # set timezone
