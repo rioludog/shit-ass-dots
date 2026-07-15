@@ -28,6 +28,7 @@
 	  "nixos"
 	  "/tmp"
 	  ".config/mozilla/firefox/nixos"
+	  ".keepassxc"
         ];
       };
     };
