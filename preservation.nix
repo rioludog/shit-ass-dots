@@ -6,8 +6,7 @@
     preserveAt."/persistent" = {
 
       files = [
-        { file = "/etc/machine-id"; inInitrd = true; how="symlink"; }
-	      { file = "/var/lib/swapfile"; }
+        { file = "/etc/machine-id"; inInitrd = true; how = "symlink"; }
       ];
 
       directories = [

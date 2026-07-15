@@ -10,6 +10,15 @@
   #};
   #networking.networkmanager.enable = false;
 
+  # swap
+  zramSwap = {
+    enable = true;
+  };
+
+  systemd.oomd = {
+    enable = true;
+  };
+
   networking = {
     wireless = {
       iwd.enable = true;
