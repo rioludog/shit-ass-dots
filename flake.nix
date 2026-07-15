@@ -70,7 +70,7 @@
         {
           home-manager.users.riolu = {
             imports = [
-				      nixvim.homeModules.nixvim
+	      nixvim.homeModules.nixvim
               mangowm.hmModules.mango
             ];
           };
