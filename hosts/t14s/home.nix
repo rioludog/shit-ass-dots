@@ -2,6 +2,9 @@
 
 {
   imports = [
+
+  # import basic hm config
+  ./../../modules/home/minimal.nix
 	
 	# programs
 	./../../modules/home/fastfetch.nix
@@ -22,7 +25,7 @@
 
 	./../../modules/home/wm/mako.nix
 
-  	./../../modules/home/wm/waybar/waybar.nix
+  ./../../modules/home/wm/waybar/waybar.nix
 	./../../modules/home/wm/waybar/style.nix
 	./../../modules/home/wm/waybar/1920.nix
 
@@ -44,58 +47,12 @@
   home.username = "riolu";
   home.homeDirectory = "/home/riolu";
   home.stateVersion = "26.05";
-
-  programs.home-manager.enable = true;
-
-  nixpkgs.config.allowUnfree = true;
-
   home.packages = with pkgs; [
-    nemo-with-extensions
-    #nemo-fileroller
-    file-roller
-    p7zip
-    pavucontrol
-    powertop
-    bluetui
-    impala
-    swaybg
-    gnome-disk-utility
-    feh
-    pokeget-rs
     gimp
 
     # games
     dolphin-emu
     #starship-sf64
     hedgemodmanager
-
-
-    # screenshot utils
-    grim
-    slurp
-    swappy
   ];
-
-  programs = {
-
-    firefox.enable = true;
-
-    btop.enable = true;
-
-    mpv.enable = true;
-
-    #neovim.enable = true;
-
-    };
-
-
-  # remove gtk window controls
-  dconf.settings = {
-    "org/gnome/desktop/wm/preferences" = {
-      "button-layout" = "appmenu";
-    };
-    "org/gnome/desktop/interface" = {
-      "color-scheme" = lib.mkForce "prefer-dark";
-    };
-  };
 }
