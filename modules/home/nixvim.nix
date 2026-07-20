@@ -8,22 +8,16 @@
 	        mini-pairs.enable = true;
 	        mini-snippets.enable = true;
 	        mini-icons.enable = true;
-	        mini-basics = {
-	          enable = true;
-	          settings = {
-              move_with_alt = true;
-	          };
-	        };
 	        mini-cursorword.enable = true;
 	        mini-starter.enable = true;
 	        notify.enable = false;
 	        mini-notify.enable = true;
+	        mini-basics.enable = true;
 	        hardtime.enable = true;
 
 	        treesitter = {
 	          enable = true;
 	          settings = {
-	          indent.enable = false;
 	          highlight.enable = true;
 	          };
 	        };
