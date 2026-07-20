@@ -42,8 +42,8 @@
         ./hosts/t430/configuration.nix
         inputs.disko.nixosModules.disko
         inputs.preservation.nixosModules.default
-        ./preservation.nix
-        ./disko.nix
+        ./modules/configuration/preservation.nix
+        ./hosts/t430/disko.nix
         stylix.nixosModules.stylix
         mangowm.nixosModules.mango
         home-manager.nixosModules.home-manager
@@ -65,6 +65,8 @@
       modules = [
         ./hosts/t14s/configuration.nix
         mangowm.nixosModules.mango
+        ./modules/configuration/preservation.nix
+        ./hosts/t14s/disko.nix
         stylix.nixosModules.stylix
         home-manager.nixosModules.home-manager
         {
