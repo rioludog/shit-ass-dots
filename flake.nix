@@ -65,6 +65,8 @@
       modules = [
         ./hosts/t14s/configuration.nix
         mangowm.nixosModules.mango
+        inputs.disko.nixosModules.disko
+        inputs.preservation.nixosModules.default
         ./modules/configuration/preservation.nix
         ./hosts/t14s/disko.nix
         stylix.nixosModules.stylix
