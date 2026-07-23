@@ -33,6 +33,7 @@
       grub = {
           efiSupport = true;
           device = "nodev";
+          enable = true;
         };
     };
   
