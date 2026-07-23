@@ -38,12 +38,12 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # enable fstrim on LUKS drive
-  boot.initrd.luks.devices = {
-    luks-dab52999-aeea-4d90-8aa4-3a5530db6056 = {
-      allowDiscards = true;
-      bypassWorkqueues = true;
-    };
-  };
+  #  boot.initrd.luks.devices = {
+  #  luks-dab52999-aeea-4d90-8aa4-3a5530db6056 = {
+  #    allowDiscards = true;
+  #    bypassWorkqueues = true;
+  #  };
+  #};
 
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
