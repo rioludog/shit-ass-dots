@@ -10,8 +10,9 @@
       ];
 
       directories = [
+        { directory = "/var/lib/nixos"; inInitrd = true; }
+        { directory = "/tmp"; inInitrd = true; }
         "/var/lib/systemd/timers"
-        "/var/lib/nixos"
         "/var/log"
         "/var/lib/bluetooth"
         "/var/lib/iwd"
@@ -26,7 +27,8 @@
           "Downloads"
 	        "Pictures"
 	        "nixos"
-	        "/tmp"
+	        ".steam"
+	        ".local/share/steam"
 	        { directory = ".config/mozilla/firefox/nixos"; how = "symlink"; }
 	        { directory = ".config/gh"; how = "symlink"; }
 	        { directory = ".keepassxc"; how = "symlink"; }

@@ -53,7 +53,7 @@
     # games
     dolphin-emu
     #starship-sf64
-    dusklight 
-    hedgemodmanager
+    #dusklight 
+    #hedgemodmanager
   ];
 }

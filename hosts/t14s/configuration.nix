@@ -24,18 +24,8 @@
 
 
   # Bootloader.
-  #boot.loader.systemd-boot.enable = true;
-  #boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader = {
-      efi = {
-          canTouchEfiVariables = true;
-        };
-      grub = {
-          efiSupport = true;
-          device = "nodev";
-          enable = true;
-        };
-    };
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
   
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -87,6 +77,7 @@
   users.users.riolu = {
     isNormalUser = true;
     description = "riolu";
+    initialPassword = "test";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
