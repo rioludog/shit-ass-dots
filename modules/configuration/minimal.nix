@@ -33,6 +33,7 @@
   };
 
   hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = false;
 
   # update microcode
     hardware.cpu = {
