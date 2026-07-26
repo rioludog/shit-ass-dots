@@ -77,7 +77,7 @@
   users.users.riolu = {
     isNormalUser = true;
     description = "riolu";
-    initialPassword = "test";
+    hashedPasswordFile = "/persistent/passwd";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
