@@ -29,6 +29,7 @@
 	        "nixos"
 	        ".steam"
 	        ".local/share/steam"
+	        ".local/share/dolphin-emu"
 	        { directory = ".config/mozilla/firefox/nixos"; how = "symlink"; }
 	        { directory = ".config/gh"; how = "symlink"; }
 	        { directory = ".keepassxc"; how = "symlink"; }
