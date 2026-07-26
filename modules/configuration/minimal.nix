@@ -135,6 +135,8 @@
     enable = true;
     extraPackages = with pkgs; [
       intel-media-driver # broadwell and newer
+      vpl-gpu-rt
+      intel-compute-runtime
     ];
   };
 
